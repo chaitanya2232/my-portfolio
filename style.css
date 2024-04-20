@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: linear-gradient(#ffffffb4, rgba(68, 48, 44, 1.868));
+    color: #000000;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    /* background-image: url(Usign-Gradients-Featured-Image.webp); */
+background: #fff;
+        /* background-size: cover;
+    background-position: center; */
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 110PX;
+    border: #3d3637 solid 2px;
+    border-radius: 30%;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+nav ul li a {
+    padding: 15px 7px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+.btn1 {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    width: fit-content;
+    /* background: #ff004f; */
+    padding: 20px 50px;
+    /* border: 2px solid #db0909;
+    border-radius: 20px; */
+
+
+}
+
+.btn:hover {
+    background: #59f307;
+    border-radius: 10px;
+}
+
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+
+
+}
+
+.header-text h2 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+/* CSS for animating text */
+@keyframes revealText {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  #introText {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: revealText 5s steps(40, end);
+  }
+  
+
+
+  
+.header-text h2 span {
+    color: #ff004f;
+}
+
+
+
+/* ---------------------ABout----------------- */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+    /* background: linear-gradient(#1a202cb4, rgba(68, 48, 44, 1.868)); */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 30%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-tital {
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* ----------------------skills------------- */
+section {
+    font-family: "Poppins", sans-serif;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(#1a202cb4, rgba(68, 48, 44, 1.868)); */
+
+}
+
+.skill-tital {
+    display: inline-flexbox;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.skill-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.card {
+    background: #7a7777;
+    border-radius: 15px;
+}
+
+.card .image-box {
+    height: 300px;
+}
+
+.card .image-box img {
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+.card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+.card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 80%;
+}
+
+.profile-details .name {
+    /* padding:0 100px ; */
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.profile-details .job {
+    /* padding:0 100px ; */
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.swiper-navBtn {
+    color: #000;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #fff;
+    border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #f2f0f0;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+
+
+/*------------------------------------ Projec---------------------------------- */
+#skills {
+    padding: 30px 0;
+
+}
+
+.skills .container h1 {
+    text-align: center;
+}
+
+.skills .container h2 {
+    padding: 55px 0;
+    text-align: center;
+    font-size: 45px;
+    /* color: #c17f7f; */
+}
+
+.Technical-Skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.about-col-2 .sub-tital p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* .img{
+    width: 80px;
+    margin: 4px 5px;
+
+} */
+.tab-tital {
+    display: flex;
+    margin: 20PX 0 40PX;
+
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+
+}
+
+.tab-countnd ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-countnd ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-countnd {
+    display: none;
+}
+
+.tab-countnd.active-tab {
+    display: block;
+
+}
+
+
+/*------------------- Project--------------- */
+#skills {
+    padding: 30px 0;
+}
+
+.Skills-list {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px; */
+    display: inline-block;
+    margin: 50px 20px;
+    width: 29%;
+
+}
+
+.Skills-list p {
+    margin-top: 12px;
+}
+
+.Skills-list div {
+    background: rgb(199 199 199);
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 12px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+.Skills-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.Skills-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.Skills-list div a {
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.Skills-list div:hover {
+    background: #efaeba;
+    transform: translateY(-10px);
+}
+
+/* .one_sk p{
+    width: 5px;
+    display: inline-block;
+} */
+/*---------------------------------------------------- Project----------------------------------------------- */
+#Project {
+    padding: 50px 0;
+}
+
+/* -------------------------------------contact----------------------------------- */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #00480e;
+    margin-right: 13px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 30px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff00bb;
+    transform: translateY(-10px);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+    background: #00b336;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    background: #d61818;
+    transform: translateY(-10px);
+}
+
+.btn .btn2 {
+    display: inline-block;
+    background: #ff004f;
+
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #050101;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copewrite {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    /* background: #262626; */
+}
+
+.copewrite i {
+    color: #ff004f;
+}
+
+.portfolio {
+
+    background: #fff;
+}
+
+
+.stack-image {
+    width: 620px;
+    margin-right: 20px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 200px; /* Adjust vertical spacing as needed */
+    margin-right: 150px; /* Adjust horizontal spacing as needed */
+    border: 0px solid #000; /* Add border with a thickness of 2px and black color */
+    border-radius: 10%; /* Make the border circular */
+}
